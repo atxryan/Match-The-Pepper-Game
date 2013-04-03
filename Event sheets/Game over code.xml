@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game over code</name>
+    <events>
+        <comment>When screen is touched or clicked the app goes to Get Started to restart the game</comment>
+        <event-block any="1">
+            <conditions>
+                <condition id="1" name="On any touch end" type="Touch" />
+                <condition id="1" name="On any click" type="Mouse" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">Get started</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

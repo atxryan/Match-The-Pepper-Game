@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level 1 code</name>
+    <events>
+        <comment>Creating two variables. Timer (initial value 30) to measure time left to complete level and Counter (initial value 0) to measure how many correct answers user has at any moment.</comment>
+        <comment>Note - If you want to change the amount of time the player has - click below and change value of Timer to what you would like.</comment>
+        <variable constant="0" name="Timer" static="0" type="number">60</variable>
+        <variable constant="0" name="Counter" static="0" type="number">0</variable>
+        <comment>Resetting the value of Timer and Counter variables to 30 and 0 respectively each time this level begins. </comment>
+        <event-block>
+            <conditions>
+                <condition id="-2" name="On start of layout" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" type="System" />
+            </actions>
+        </event-block>
+        <comment>When picture &quot;A&quot; touches the right text &quot;A&quot; then 1) The tick mark appears on picture A 2) The text with picture A&apos;s name gets destroyed 3) Music to show correct selection plays 4) Counter tracking number of correct answers increases by 1.</comment>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="A">
+                    <param id="0" name="Object">AA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="A">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="AA" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When picture &quot;B&quot; touches the right text &quot;B&quot; then 1) The tick mark appears on picture B 2) The text with picture B&apos;s name gets destroyed 3) Music to show correct selection plays 4) Counter tracking number of correct answers increases by 1.</comment>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="B">
+                    <param id="0" name="Object">BB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="B">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="BB" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When picture &quot;C&quot; touches the right text &quot;C&quot; then 1) The tick mark appears on picture C 2) The text with picture C&apos;s name gets destroyed 3) Music to show correct selection plays 4) Counter tracking number of correct answers increases by 1.</comment>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="C">
+                    <param id="0" name="Object">CC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="C">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="CC" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Same as above for D,L,N,K,O,G,E,F,H,J,I and M pictures and associated text names. </comment>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="D">
+                    <param id="0" name="Object">DD</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="D">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="DD" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="L">
+                    <param id="0" name="Object">LL</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="L">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="LL" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="N">
+                    <param id="0" name="Object">NN</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="N">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="NN" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="K">
+                    <param id="0" name="Object">KK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="K">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="KK" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="O">
+                    <param id="0" name="Object">OO</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="O">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="OO" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="G">
+                    <param id="0" name="Object">GG</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="G">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="GG" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="E">
+                    <param id="0" name="Object">EE</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="E">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="EE" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="F">
+                    <param id="0" name="Object">FF</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="F">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="FF" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="H">
+                    <param id="0" name="Object">HH</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="H">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="HH" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="J">
+                    <param id="0" name="Object">JJ</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="J">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="JJ" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="I">
+                    <param id="0" name="Object">II</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="I">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="II" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="M">
+                    <param id="0" name="Object">MM</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" type="M">
+                    <param id="0" name="Object">Tick</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" type="MM" />
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Success</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When the number of correct answers = 15 (As indicated by counter), you crossed the level. Game goes to Game complete layout. </comment>
+        <event-block>
+            <conditions>
+                <condition id="-14" name="Compare variable" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">Game complete</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>To measure time, the value of variable Timer decreases by 1 every second. </comment>
+        <event-block>
+            <conditions>
+                <condition id="-6" name="Every X seconds" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When the value of variable Timer = 0, 30 seconds have passed and Game goes to layout game over. It plays the Fail music </comment>
+        <event-block>
+            <conditions>
+                <condition id="-14" name="Compare variable" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">Game over</param>
+                </action>
+                <action id="0" name="Play" type="Audio">
+                    <param id="0" name="Audio file">Fail</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Wrong&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>This shows the value of the variable Timer at each instant. </comment>
+        <event-block>
+            <conditions>
+                <condition id="-1" name="Every tick" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" type="Text">
+                    <param id="0" name="Text">&quot;Time Left: &quot;&amp;Timer</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

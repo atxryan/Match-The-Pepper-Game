@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Pepper Match</name>
+    <description>Match all the peppers.</description>
+    <version>1.0</version>
+    <author>Ryan Joy</author>
+    <unique-id>2qv3633v604ld</unique-id>
+    <saved-with-version>12302</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra.com" id="win8" version="1">Windows 8</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1366</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <first-layout>Get started</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">iPhone only</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="Touch">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="A">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="B">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.280374" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="D">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" format="jpeg" hotspotX="0.526667" hotspotY="0.486667" quality="75" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="K">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.518797" hotspotY="0.501538" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="N">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50989" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="O">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="C">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="G">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509934" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="E">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="F">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="H">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497268" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="J">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.158291" y="0.158291" />
+                            <point x="0.841709" y="0.158291" />
+                            <point x="0.841709" y="1" />
+                            <point x="0.158291" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="I">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.479167" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="M">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Logo">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.325" />
+                            <point x="0.7125" y="0.2875" />
+                            <point x="0.525" y="0.5" />
+                            <point x="0.717188" y="0.717188" />
+                            <point x="0.5" y="0.7125" />
+                            <point x="0.321875" y="0.678125" />
+                            <point x="0.257813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tick">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.261719" y="0.261719" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.742188" y="0.257813" />
+                            <point x="0.863281" y="0.5" />
+                            <point x="0.773438" y="0.773438" />
+                            <point x="0.5" y="0.894531" />
+                            <point x="0.230469" y="0.769531" />
+                            <point x="0.140625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Windows8">
+            <plugin id="win8" />
+        </object-type>
+        <object-type name="Cross">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.146875" y="0.146875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.853125" y="0.146875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.853125" y="0.853125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.146875" y="0.853125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AA">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BB">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="CC">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="DD">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="EE">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="FF">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="GG">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="HH">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="II">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="JJ">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="KK">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="LL">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="MM">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="NN">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="OO">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="DragDrop">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Congrats">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Get started.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Game complete.xml</layout>
+        <layout>Game over.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>Level 1 code.xml</event-sheet>
+        <event-sheet>Game complete code.xml</event-sheet>
+        <event-sheet>Get started code.xml</event-sheet>
+        <event-sheet>Game over code.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" />
+        <global-instance type="Audio">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Windows8">
+            <properties>
+                <test-mode>No</test-mode>
+                <about-setting>No</about-setting>
+                <support-setting>No</support-setting>
+                <privacy-setting>No</privacy-setting>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder expanded="0">
+        <file name="Success.m4a" />
+        <file name="Success.ogg" />
+        <file name="Success.wav" />
+        <file name="Fail.m4a" />
+        <file name="Fail.ogg" />
+        <file name="Fail.wav" />
+    </sounds-folder>
+    <music-folder expanded="1" />
+    <files-folder expanded="1" />
+</c2project>

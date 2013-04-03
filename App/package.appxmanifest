@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="170RyanJoy.MatchthePepper" Version="1.0.0.0" Publisher="CN=D83F780E-7ADD-4288-B0AA-4634C2B3E838" />
+  <Properties>
+    <DisplayName>Match the Pepper</DisplayName>
+    <Description>Match all the peppers.</Description>
+    <PublisherDisplayName>Ryan Joy</PublisherDisplayName>
+    <Logo>StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="index.html">
+      <VisualElements DisplayName="Match the Pepper" Logo="app-logo.png" SmallLogo="SmallLogo.png" Description="Match all the peppers." ForegroundText="light" BackgroundColor="#FFFFFF">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
